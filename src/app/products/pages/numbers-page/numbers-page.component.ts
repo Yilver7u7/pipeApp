@@ -7,4 +7,7 @@ import { Component } from '@angular/core';
 })
 export class NumbersPageComponent {
 
+  public numberOne: number = 7233220.23293;
+  public numberTwo: number = 0.4856;
+
 }

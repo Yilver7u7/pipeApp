@@ -1,1 +1,45 @@
-<p>numbers-page works!</p>
+<!-- <p-panel header="Pipes básicos" class="p-1"></p-panel>
+  <p>
+    Pipes incluídos en Angular - Usualmente en el Common Module
+  </p>
+</p-panel> -->
+
+<p-panel header="Pipes Basicos" class="p-1">
+  <p>
+    Pipes incluidos en Angular - Usualmente en el Common Module
+  </p>
+</p-panel>
+
+<div class="grid">
+
+  <!-- Tarjeta -->
+  <div class="col-12 md:col-4">
+    <p-card header="Ventas Netas">
+      {{ numberOne+ 781624 | number:'1.2-2' }}
+    </p-card>
+  </div>
+
+  <!-- Tarjeta -->
+  <div class="col-12 md:col-4">
+    <p-card header="Ventas Brutas">
+      {{ numberOne | currency:'USD ': 'symbol-narrow':'1.4-4' }}
+    </p-card>
+  </div>
+
+  <!-- Tarjeta -->
+  <div class="col-12 md:col-4">
+    <p-card header="Ganancias Porcentuales">
+      {{ numberTwo| percent:'1.2-2' }}
+    </p-card>
+  </div>
+
+</div>
+
+
+
+
+
+
+
+
+
