@@ -6,9 +6,11 @@ import { NumbersPageComponent } from './pages/numbers-page/numbers-page.componen
 import { OrderComponent } from './pages/order/order.component';
 import { PrimeNgModule } from '../prime-ng/prime-ng.module';
 import { ProductsRoutingModule } from './products-routing.module';
+import { SortByPipe } from './pipes/sort-by.pipe';
 import { ToggleCasePipe } from './pipes/toggle-case.pipe';
 import { UncommonPageComponent } from './pages/uncommon-page/uncommon-page.component';
 import { VuelaCasePipe } from './pipes/vuela-case.pipe';
+
 
 @NgModule({
   declarations: [
@@ -19,7 +21,9 @@ import { VuelaCasePipe } from './pipes/vuela-case.pipe';
     //Pipe Custom
     ToggleCasePipe,
     // Can Fly
-    VuelaCasePipe
+    VuelaCasePipe,
+    // Sort By
+    SortByPipe
   ],
   imports: [
     CommonModule,

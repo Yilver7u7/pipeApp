@@ -10,6 +10,8 @@ import { VuelaCasePipe } from '../../pipes/vuela-case.pipe';
 export class OrderComponent {
 
   public isUpperCase:boolean = false;
+  public orderBy?: keyof Hero | undefined | '';
+
 
   public heroes: Hero[] = [{
     name: 'Superman',
@@ -44,8 +46,10 @@ export class OrderComponent {
   }
 
   // Validacion
+  changeOrder( value: keyof Hero ):void{
+    this.orderBy = value;
+  }
 
-  
 
 
 }
